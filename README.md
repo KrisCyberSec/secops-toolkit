@@ -1,4 +1,4 @@
-# SecOps Automation Toolkit 🔧
+# SecOps Automation Toolkit
 
 > A comprehensive collection of security automation scripts for SOC analysts and security engineers
 
@@ -6,22 +6,22 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey.svg)
 
-## 📋 Overview
+## Overview
 
 **SecOps Automation Toolkit** is a modular collection of Python-based security automation tools designed to streamline common Security Operations Center (SOC) workflows. Each module addresses a specific security need, from log analysis to incident response.
 
-## ✨ Features
+## Features
 
-### 🔍 Log Analyzer (`log_analyzer.py`)
+### Log Analyzer (`log_analyzer.py`)
 Automated security log analysis with threat detection capabilities.
 
 **Features:**
-- ✅ SSH brute force detection
-- ✅ Failed login pattern analysis
-- ✅ Port scan detection
-- ✅ Suspicious IP tracking
-- ✅ Automated alert generation
-- ✅ Support for multiple log formats (auth.log, syslog, Apache, Nginx)
+- SSH brute force detection
+- Failed login pattern analysis
+- Port scan detection
+- Suspicious IP tracking
+- Automated alert generation
+- Support for multiple log formats (auth.log, syslog, Apache, Nginx)
 
 **Detection Rules:**
 - Multiple failed SSH attempts (configurable threshold)
@@ -30,16 +30,16 @@ Automated security log analysis with threat detection capabilities.
 - Privilege escalation attempts
 - Unusual sudo usage patterns
 
-### 🌐 Network Change Monitor (`network_monitor.py`)
+### Network Change Monitor (`network_monitor.py`)
 Continuous network monitoring with change detection and alerting.
 
 **Features:**
-- ✅ Periodic network scanning (ARP sweep)
-- ✅ Device fingerprinting (MAC, hostname, open ports)
-- ✅ Change detection (new devices, missing devices, port changes)
-- ✅ Historical tracking database
-- ✅ Alert on anomalies
-- ✅ Export reports (JSON, CSV, HTML)
+- Periodic network scanning (ARP sweep)
+- Device fingerprinting (MAC, hostname, open ports)
+- Change detection (new devices, missing devices, port changes)
+- Historical tracking database
+- Alert on anomalies
+- Export reports (JSON, CSV, HTML)
 
 **Use Cases:**
 - Detect rogue devices on network
@@ -47,16 +47,16 @@ Continuous network monitoring with change detection and alerting.
 - Monitor network topology changes
 - Identify shadow IT
 
-### 📊 Security Report Generator (`report_generator.py`)
+### Security Report Generator (`report_generator.py`)
 Automated security reporting and metrics dashboard.
 
 **Features:**
-- ✅ Daily/weekly/monthly security summaries
-- ✅ Threat statistics and trends
-- ✅ Top attackers and targets
-- ✅ Geographic threat mapping
-- ✅ Executive-friendly visualizations
-- ✅ Export to PDF, HTML, or email
+- Daily/weekly/monthly security summaries
+- Threat statistics and trends
+- Top attackers and targets
+- Geographic threat mapping
+- Executive-friendly visualizations
+- Export to PDF, HTML, or email
 
 **Report Sections:**
 - Executive summary
@@ -65,16 +65,16 @@ Automated security reporting and metrics dashboard.
 - Remediation recommendations
 - Compliance metrics
 
-### 🚨 Incident Response Helper (`ir_helper.py`)
+### Incident Response Helper (`ir_helper.py`)
 Quick incident response commands and automation.
 
 **Features:**
-- ✅ Rapid triage commands
-- ✅ Evidence collection automation
-- ✅ Network isolation scripts
-- ✅ Forensic data gathering
-- ✅ Incident timeline builder
-- ✅ IR playbook templates
+- Rapid triage commands
+- Evidence collection automation
+- Network isolation scripts
+- Forensic data gathering
+- Incident timeline builder
+- IR playbook templates
 
 **Capabilities:**
 - System snapshot (running processes, connections, users)
@@ -84,19 +84,19 @@ Quick incident response commands and automation.
 - Hash calculation for files
 - Indicator of Compromise (IOC) extraction
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language**: Python 3.9+
-- **Libraries**: 
-  - `scapy` - Network packet manipulation
-  - `pandas` - Data analysis and reporting
-  - `matplotlib` / `plotly` - Visualization
-  - `sqlite3` - Local database
-  - `requests` - API integration
-  - `jinja2` - Report templating
-  - `psutil` - System monitoring
+- **Libraries**:
+  - `scapy`: Network packet manipulation
+  - `pandas`: Data analysis and reporting
+  - `matplotlib` / `plotly`: Visualization
+  - `sqlite3`: Local database
+  - `requests`: API integration
+  - `jinja2`: Report templating
+  - `psutil`: System monitoring
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -185,7 +185,7 @@ sudo python ir_helper.py --isolate --host 192.168.1.100
 python ir_helper.py --extract-iocs --file /var/log/syslog
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 secops-toolkit/
@@ -222,27 +222,27 @@ secops-toolkit/
     └── playbooks/            # IR playbook examples
 ```
 
-## 🎓 Skills Demonstrated
+## Skills Demonstrated
 
 This toolkit showcases:
 
-- ✅ **Security Automation** - Building tools to automate SOC workflows
-- ✅ **Threat Detection** - Implementing detection logic and rules
-- ✅ **Log Analysis** - Parsing and analyzing security logs
-- ✅ **Network Security** - Network monitoring and change detection
-- ✅ **Incident Response** - IR automation and evidence collection
-- ✅ **Python Development** - Clean, modular, maintainable code
-- ✅ **Data Analysis** - Processing and visualizing security data
-- ✅ **Reporting** - Creating actionable security reports
+- **Security Automation**: Building tools to automate SOC workflows
+- **Threat Detection**: Implementing detection logic and rules
+- **Log Analysis**: Parsing and analyzing security logs
+- **Network Security**: Network monitoring and change detection
+- **Incident Response**: IR automation and evidence collection
+- **Python Development**: Clean, modular, maintainable code
+- **Data Analysis**: Processing and visualizing security data
+- **Reporting**: Creating actionable security reports
 
-## 🔒 Security Considerations
+## Security Considerations
 
 - **Permissions**: Some modules require elevated privileges (root/sudo)
 - **Data Privacy**: Logs may contain sensitive information - handle appropriately
 - **Network Impact**: Network scanning can trigger IDS/IPS alerts
 - **Testing**: Always test in a controlled environment first
 
-## 📚 Documentation
+## Documentation
 
 - [Installation Guide](docs/installation.md)
 - [Configuration Guide](docs/configuration.md)
@@ -250,7 +250,7 @@ This toolkit showcases:
 - [API Reference](docs/api_reference.md)
 - [Contributing Guide](CONTRIBUTING.md)
 
-## 🔮 Roadmap
+## Roadmap
 
 - [ ] Add support for Windows Event Logs
 - [ ] Integrate with SIEM platforms (Splunk, ELK)
@@ -261,22 +261,10 @@ This toolkit showcases:
 - [ ] Automated threat hunting queries
 - [ ] Cloud security monitoring (AWS, Azure, GCP)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) first.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by real-world SOC operations and challenges
-- Built with feedback from security professionals
-- Designed for learning and practical application
-
----
-
-**Built by [KrisCyberSec](https://github.com/KrisCyberSec)** | Aspiring SOC Analyst
-
-*⚠️ Disclaimer: This toolkit is for educational and authorized security testing only. Always obtain proper authorization before using these tools on any network or system.*
