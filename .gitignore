@@ -39,6 +39,9 @@ wheels/
 *.log
 logs/
 
+# But allow example logs
+!examples/**/*.log
+
 # Reports
 reports/
 *.pdf

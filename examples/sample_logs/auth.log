@@ -1,0 +1,16 @@
+Feb  5 20:15:23 server sshd[1234]: Failed password for invalid user admin from 192.168.1.100 port 52341 ssh2
+Feb  5 20:15:25 server sshd[1235]: Failed password for invalid user admin from 192.168.1.100 port 52342 ssh2
+Feb  5 20:15:27 server sshd[1236]: Failed password for invalid user root from 192.168.1.100 port 52343 ssh2
+Feb  5 20:15:29 server sshd[1237]: Failed password for invalid user test from 192.168.1.100 port 52344 ssh2
+Feb  5 20:15:31 server sshd[1238]: Failed password for invalid user user from 192.168.1.100 port 52345 ssh2
+Feb  5 20:15:33 server sshd[1239]: Failed password for invalid user admin from 192.168.1.100 port 52346 ssh2
+Feb  5 20:16:45 server sshd[1240]: Accepted password for john from 192.168.1.50 port 54321 ssh2
+Feb  5 20:17:12 server sudo: john : TTY=pts/0 ; PWD=/home/john ; USER=root ; COMMAND=/usr/bin/apt update
+Feb  5 20:18:01 server sshd[1241]: Failed password for invalid user oracle from 10.0.0.50 port 12345 ssh2
+Feb  5 20:18:03 server sshd[1242]: Failed password for invalid user oracle from 10.0.0.50 port 12346 ssh2
+Feb  5 20:18:05 server sshd[1243]: Failed password for invalid user postgres from 10.0.0.50 port 12347 ssh2
+Feb  5 20:18:07 server sshd[1244]: Failed password for invalid user mysql from 10.0.0.50 port 12348 ssh2
+Feb  5 20:18:09 server sshd[1245]: Failed password for invalid user admin from 10.0.0.50 port 12349 ssh2
+Feb  5 20:18:11 server sshd[1246]: Failed password for invalid user root from 10.0.0.50 port 12350 ssh2
+Feb  5 20:19:30 server sshd[1247]: Accepted password for alice from 192.168.1.75 port 55555 ssh2
+Feb  5 20:20:15 server sudo: alice : TTY=pts/1 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
