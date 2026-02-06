@@ -1,0 +1,22 @@
+# Core dependencies
+requests>=2.31.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+plotly>=5.14.0
+
+# Database
+sqlite3; python_version < '3.0'
+
+# System monitoring
+psutil>=5.9.0
+
+# Report generation
+jinja2>=3.1.2
+
+# Optional: Network scanning (requires system dependencies)
+# scapy>=2.5.0
+
+# Development dependencies
+pytest>=7.4.0
+black>=23.3.0
+flake8>=6.0.0
